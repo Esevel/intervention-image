@@ -55,7 +55,7 @@ class Decoder extends \Intervention\Image\AbstractDecoder
                 $core = @imagecreatefromwebp($path);
                 break;
             case 'image/avif':
-                if ( ! function_exists('imagecreatefromwavif')) {
+                if ( ! function_exists('imagecreatefromavif')) {
                     throw new NotReadableException(
                         "Unsupported image type. GD/PHP installation does not support Avif format."
                     );
